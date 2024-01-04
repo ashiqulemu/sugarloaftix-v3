@@ -133,15 +133,10 @@ html {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
 }
-@media (min-width: 960px) {
-  .card-style .content {
-    outline: 8px solid #5a2e72;
-  }
-}
 .card-style .content .datetime {
-  background: linear-gradient(45deg, #862bbd, #3f2c4a);
+  background: linear-gradient(45deg, #9517e1, #432952);
   color: #fff;
-  padding: 4px 9px;
+  padding: 9px;
   letter-spacing: 2px;
   position: absolute;
   width: 56%;
