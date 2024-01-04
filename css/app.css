@@ -199,6 +199,14 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+body::-webkit-scrollbar {
+  background-color: #800080;
+  width: 4px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #ffa500 !important;
+}
 
 .topbar .inner {
   display: flex;
