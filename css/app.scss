@@ -98,6 +98,10 @@ html {
     color: rgb(227 227 227) !important;
     background: linear-gradient(90deg, purple 60%, orange 0%);
     letter-spacing: 5px; 
+    @media(max-width:650px){
+        background:  orange  ;
+        padding: 15px;
+    }
     }
 
     // &:after {

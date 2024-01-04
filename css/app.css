@@ -83,6 +83,12 @@ html {
   background: linear-gradient(90deg, purple 60%, orange 0%);
   letter-spacing: 5px;
 }
+@media (max-width: 650px) {
+  .section-title {
+    background: orange;
+    padding: 15px;
+  }
+}
 
 .newsletter {
   margin-top: 30px;
