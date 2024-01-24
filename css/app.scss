@@ -1,8 +1,8 @@
 // variables
 
-$primary: #ffa500  !important;
+$primary: #ffa500 !important;
 $secondary: #ffa500 !important;
-$theme: #32034f!important;
+$theme: #32034f !important;
 $txt: #585858;
 $white: #fff;
 
@@ -11,7 +11,7 @@ $white: #fff;
     src: url('../fonts/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2');
 }
 
- 
+
 
 * {
     font-family: space-regular;
@@ -32,7 +32,7 @@ a {
     color: $secondary;
 }
 
-.txt-theme{
+.txt-theme {
     color: $theme;
 }
 
@@ -46,9 +46,10 @@ a {
 
 
 .footer-bg {
-    background:#401858;
+    background: #401858;
     background-size: 100% 100%;
-    position: relative; 
+    position: relative;
+
     &:after {
 
         content: "";
@@ -58,7 +59,7 @@ a {
         position: absolute;
         top: 0;
         background: #32034f;
-      
+
     }
 
     &:before {
@@ -72,7 +73,8 @@ a {
         position: absolute;
         top: 0;
         left: 45%;
-        @media(max-width:600px){
+
+        @media(max-width:600px) {
             left: 36%;
         }
     }
@@ -97,23 +99,24 @@ html {
     display: inline-block;
     color: rgb(227 227 227) !important;
     background: linear-gradient(90deg, purple 60%, orange 0%);
-    letter-spacing: 5px; 
-    @media(max-width:650px){
-        background:  orange  ;
+    letter-spacing: 5px;
+
+    @media(max-width:650px) {
+        background: orange;
         padding: 15px;
     }
-    }
+}
 
-    // &:after {
-    //     position: absolute;
-    //     content: '';
-    //     width: 60px;
-    //     height: 4px;
-    //     bottom: -10px;
-    //     left: 0;
-    //     background: linear-gradient(90deg, #f9763f, #d5475b, #3e3acc);
-    // }
- 
+// &:after {
+//     position: absolute;
+//     content: '';
+//     width: 60px;
+//     height: 4px;
+//     bottom: -10px;
+//     left: 0;
+//     background: linear-gradient(90deg, #f9763f, #d5475b, #3e3acc);
+// }
+
 
 .newsletter {
     margin-top: 30px;
@@ -145,7 +148,7 @@ html {
     }
 }
 
-.txt-theme{
+.txt-theme {
     color: #401858;
     font-weight: bold;
 }
@@ -154,19 +157,20 @@ html {
     overflow: hidden;
     box-shadow: 0 4px 24px 0 #0000001a;
     transition: all 0.3s ease-in-out;
+
     .content {
-        padding: 30px;
+        padding: 30px 18px 30px 18px;
         background: #ffffffad;
-        flex: 1;
+        flex: 2;
         position: relative;
-        backdrop-filter: blur(3px);
-        
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         .datetime {
-            background:linear-gradient(45deg, #9517e1, #432952);
+            background: linear-gradient(45deg, #9517e1, #432952);
             color: #fff;
-            padding:  9px;
-            letter-spacing: 2px;
+            padding: 9px; 
             position: absolute;
             width: 56%;
             right: 0;
@@ -176,13 +180,20 @@ html {
         }
 
         .title {
-            font-size: 27px;
+            min-height: 55px;
+            font-size: 22px;
             margin: 12px 0 7px;
             color: #333;
             text-transform: capitalize;
             line-height: 1.2;
-            font-family: space-regular; 
+            font-family: space-regular;
             font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            @media(max-width:1023px){
+                font-size: 19px;
+            }
         }
 
         p {
@@ -232,12 +243,12 @@ html {
         }
     }
 
-    &.blogBox{
+    &.blogBox {
         &:hover {
-                transform: translateY(-3px);
-            }
+            transform: translateY(-3px);
+        }
     }
-    
+
 }
 
 
@@ -247,14 +258,15 @@ body {
     // background: url('../images/pexels-vishnu-r-nair-1105666.jpg');
     background-size: cover;
     background-attachment: fixed;
-    &::-webkit-scrollbar{
+
+    &::-webkit-scrollbar {
         background-color: #800080;
         width: 4px;
     }
 
-    &::-webkit-scrollbar-thumb{
-      border-radius: 50px;
-      background:   $primary ; 
+    &::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background: $primary ;
     }
 }
 
@@ -296,7 +308,7 @@ body {
 
 .siteHeader {
     background: #401858;
-    backdrop-filter: blur(6px); 
+    backdrop-filter: blur(6px);
     border-bottom: 2px solid #572276;
 
     .navbar-brand {
@@ -321,7 +333,7 @@ body {
                 font-size: 15px;
                 color: #fff;
                 padding: 8px 12px;
-                border-radius: 4px; 
+                border-radius: 4px;
                 text-transform: uppercase;
 
                 @media(max-width:1024px) {
@@ -384,7 +396,7 @@ body {
 
         h5 {
             color: $secondary;
-            text-transform: uppercase; 
+            text-transform: uppercase;
             padding-left: 15px;
 
             &:hover {
@@ -439,12 +451,12 @@ body {
 }
 
 .blogBox {
-    margin-bottom: 20px;
     display: flex;
     width: 100%;
     border-radius: 6px;
+ 
 
-    @media(max-width:960px){
+    @media(max-width:1023px) {
         flex-direction: column;
     }
 
@@ -622,7 +634,7 @@ body {
 }
 
 #contact {
-    font-size: 16px; 
+    font-size: 16px;
 
     .iconify {}
 }
@@ -868,6 +880,7 @@ footer {
     background: linear-gradient(180deg, #1a0d0da6 -26%, #2b0756), url(../images/contact-us-image.jpg);
     background-attachment: fixed;
     background-size: 100% 100%;
+
     img {
         border-radius: 25% 82% 35% 58% / 65% 82% 15% 38%;
         transition: all 0.4s ease-in-out;
@@ -897,7 +910,7 @@ footer {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 400;
-    border-radius: 1px; 
+    border-radius: 1px;
     text-decoration: none;
     border: 0;
     color: #401858 !important;
@@ -1484,9 +1497,9 @@ footer {
 }
 
 
-.brand-logo{
-    @media(max-width:960px){
-        width: 272px!important;
+.brand-logo {
+    @media(max-width:960px) {
+        width: 272px !important;
         display: block;
         text-align: center;
         margin: 4px auto;
@@ -1508,9 +1521,10 @@ footer {
     -moz-appearance: none;
     appearance: none;
     border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
-.form-group{
+
+.form-group {
     margin-bottom: 15px;
 }
 
@@ -1519,7 +1533,7 @@ footer {
     background-color: #f7e7cc;
     border: 0;
 
-    &:hover{
+    &:hover {
         background: #401858;
     }
 }

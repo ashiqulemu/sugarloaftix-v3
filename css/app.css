@@ -126,18 +126,18 @@ html {
   transition: all 0.3s ease-in-out;
 }
 .card-style .content {
-  padding: 30px;
+  padding: 30px 18px 30px 18px;
   background: rgba(255, 255, 255, 0.6784313725);
-  flex: 1;
+  flex: 2;
   position: relative;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card-style .content .datetime {
   background: linear-gradient(45deg, #9517e1, #432952);
   color: #fff;
   padding: 9px;
-  letter-spacing: 2px;
   position: absolute;
   width: 56%;
   right: 0;
@@ -146,13 +146,22 @@ html {
   border-radius: 0 0 0 12px;
 }
 .card-style .content .title {
-  font-size: 27px;
+  min-height: 55px;
+  font-size: 22px;
   margin: 12px 0 7px;
   color: #333;
   text-transform: capitalize;
   line-height: 1.2;
   font-family: space-regular;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media (max-width: 1023px) {
+  .card-style .content .title {
+    font-size: 19px;
+  }
 }
 .card-style .content p {
   font-size: 15px;
@@ -352,12 +361,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .blogBox {
-  margin-bottom: 20px;
   display: flex;
   width: 100%;
   border-radius: 6px;
 }
-@media (max-width: 960px) {
+@media (max-width: 1023px) {
   .blogBox {
     flex-direction: column;
   }
